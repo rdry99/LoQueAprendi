@@ -1,0 +1,25 @@
+[
+    {
+    "tituloplato":"plato 1",
+    "descripcion":"la mejor forma de cuidarse y comer sano , la remolacha es un alimento super nutritivo",
+    "imagenes":"./img/dish1.png"
+},
+
+{
+    "tituloplato":"plato 2",
+    "descripcion":"la mejor forma de cuidarse y comer sano , el garbanzo",
+    "imagenes":"./img/dish3.png"
+},
+
+{
+    "tituloplato":"plato 3",
+    "descripcion":"lorem   adsfsgfjfgjhlkfdgklfdjskgjlfksdjglkfdglkjdgslkjsfdg",
+    "imagenes":"./img/dish1.png"
+},
+
+{
+    "tituloplato":"plato 4",
+    "descripcion":"asfgnlfdngknfdglknfkgnlksfngnrekgnegnlklkervmrkemvlkmrkg vrkmgkvmerkgv",
+    "imagenes":"./img/dish3.png"
+}
+]

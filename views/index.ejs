@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include('./parcials/links.ejs')%>
+</head>
+<body>
+    <header>
+         <%-include('./parcials/nav.ejs') %>
+
+         <div class="container">
+            <div class="row mt-5 d-flex align-items-center">
+    
+                <div class="col-6">
+                    <h2>Origen</h2>
+                    <p>Somos lo que comemos y en origen nos encargamos de darte las alternativas de comidas más sanas para estar en armonía con tu cuerpo.</p>
+                </div>
+                <div class="col-6">
+                    <img src="./img/main-dish.png" alt="Plato principal">
+                </div>
+            </div>
+    
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container mt-5">
+                <h2>Nuestros Platos</h2>
+                <p>Todos nuestros platos están basados en productos orgánicos. Esto quiere decir que al inerirlos, estamos eligiendo cuidar nuestro cuerpo dejando de lado productos trangénicos, modificados genéticamente y cultivados en un entorno lleno de pesticidas</p>
+            </div>
+            </section>
+            <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <!--A partir de esta parte repita el esquema con distinto contenido--> 
+                     <%productos.forEach((dato)=>{%> 
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <h5 class="card-title"><%=dato.tituloplato %></h5>
+                                    <p class="card-text"><%=dato.descripcion%></p>
+                                    
+                                    </div>
+                                    <img src="<%=dato.imagen%>" class="card-img-bottom" alt="">
+                                </div>
+                            </div>
+                    <%})%>
+                    
+                </div>         
+            </div>
+        </section>
+    </main>
+   
+    <%-include('./parcials/footer.ejs')%>
+</body>
+</html>
